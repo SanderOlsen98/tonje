@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("./snow.jpg");
+    background-image: url("img/010ead9b14e8cf9cad4390500f6f624f3785ab09c2.jpg");
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -20,12 +20,14 @@ h1 {
     font-weight: normal;
     font-size: 4rem;
     margin-top: 5rem;
+    color: white;
 }
 
 .countdown-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: white;
 }
 
 .big-text {
