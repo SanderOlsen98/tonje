@@ -55,7 +55,7 @@ input {
     font-family: inherit;
     font-size: 1rem;
     padding: 1rem;
-    min-width: 300px;
+    min-width: 600px;
 }
 
 input:focus {
