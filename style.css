@@ -45,6 +45,8 @@ h1 {
     font-size: 1.3rem;
 }
 
+/*Weather*/
+
 input {
     background-color: #fff;
     border: none;
@@ -73,6 +75,9 @@ input:focus {
     color: #fff;
 }
 
+small {
+    color: white;
+}
 
 /*Drawing*/
 
