@@ -9,7 +9,41 @@
         <link rel="shortcut icon" type="image/jpg" href="img/IMG_4487.jpg">
     </head>
     <body>
-        <h1>Hjem te Norgeeee<3</h1>
+        <section class="header">
+            <nav>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="blogs.html">Vær</a></li>
+                    <li><a href="about.html">Tegne :P</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Norgeeee<3</h1>
+
+        <div class="countdown-container">
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>dager</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>timer</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>minutter</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>sekunder</span>
+            </div>
+        </div>
+        </section>
+        
+        <h1>Norgeeee<3</h1>
 
         <div class="countdown-container">
             <div class="countdown-el days-c">
@@ -48,5 +82,17 @@
             <button id="clear">💩</button>
         </div>
         <p>&copy;Tonje e noob</p></a>
+        <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+    </script>  
     </body>
 </html>
