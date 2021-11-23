@@ -21,28 +21,20 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Norgeeee<3</h1>
 
         <div class="countdown-container">
-            <div class="countdown-el days-c">
-                <p class="big-text" id="days">0</p>
-                <span>dager</span>
-            </div>
-            <div class="countdown-el hours-c">
-                <p class="big-text" id="hours">0</p>
-                <span>timer</span>
-            </div>
-            <div class="countdown-el mins-c">
-                <p class="big-text" id="mins">0</p>
-                <span>minutter</span>
-            </div>
-            <div class="countdown-el seconds-c">
-                <p class="big-text" id="seconds">0</p>
-                <span>sekunder</span>
-            </div>
+            <form id="form">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search by location"
+                    autocomplete="off"
+                />
+            </form>
         </div>
         </section>
         <p>&copy;Tonje e noob</p></a>
+        <script src="vær.js"></script>
         <!----JavaScript for toggle menu---->
     <script>
         var navLinks = document.getElementById("navLinks");
