@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tonje e best</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="vær.js"></script>
+        <script src="weather.js"></script>
         <link rel="shortcut icon" type="image/jpg" href="img/IMG_4487.jpg">
     </head>
     <body>
@@ -21,18 +21,17 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-
-        <div class="countdown-container">
-            <form id="form">
-                <input
-                    type="text"
-                    id="search"
-                    placeholder="Search by location"
-                    autocomplete="off"
-                />
-            </form>
-        </div>
+        <form id="form">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by location"
+                autocomplete="off"
+            />
+        </form>
+        <main id="main"></main>
         </section>
+            
         
         <!----JavaScript for toggle menu---->
     <script>
