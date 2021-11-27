@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
+<<<<<<< HEAD
     background-image: url("img/010ead9b14e8cf9cad4390500f6f624f3785ab09c2.jpg");
     background-size: cover;
     background-position: center center;
@@ -15,99 +16,164 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     position: relative;
+=======
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(img/010ead9b14e8cf9cad4390500f6f624f3785ab09c2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 135px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: lightblue;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+nav .fa {
+  display: none;
+>>>>>>> 96dd09b62db6bf96e898b5241eabfe3c05da893c
 }
 
 h1 {
-    font-weight: normal;
-    font-size: 4rem;
-    margin-top: 5rem;
-    color: white;
+  font-weight: normal;
+  font-size: 4rem;
+  margin-top: 5rem;
+  color: white;
 }
 
 .countdown-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
 }
 
 .big-text {
-    font-weight: bold;
-    font-size: 6rem;
-    line-height: 1;
-    margin: 1rem 2rem;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 2rem;
 }
 
 .countdown-el {
-    text-align: center;
+  text-align: center;
 }
 
 .countdown-el span {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /*Weather*/
 
 input {
-    background-color: #fff;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 1rem;
-    min-width: 500px;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  min-width: 50pxpx;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .weather {
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .weather h2 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  color: #fff;
 }
 
 small {
-    color: white;
+  color: white;
 }
 
 /*Drawing*/
 
 canvas {
-    border: 2px solid lightblue;
-    background-color: white;
-    margin-top: 200px;
+  border: 2px solid lightblue;
+  background-color: white;
+  margin-top: 200px;
 }
 
 .toolbox {
-    background-color: lightblue;
-    border: 1px solid lightcyan;
-    display: flex;
-    padding: 1rem;
-    width: 700px;
+  background-color: lightblue;
+  border: 1px solid lightcyan;
+  display: flex;
+  padding: 1rem;
+  width: 700px;
 }
 
 .toolbox > * {
-    background-color: #fff;
-    border: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    padding: 0.25rem;
-    margin: 0.25rem;
-    height: 50px;
-    width: 50px;
+  background-color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  height: 50px;
+  width: 50px;
 }
 
 .toolbox > *:last-child {
-    margin-left: auto;
+  margin-left: auto;
 }

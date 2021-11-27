@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tonje e best</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
+        <script src="weather.js"></script>
         <link rel="shortcut icon" type="image/jpg" href="img/IMG_4487.jpg">
     </head>
     <body>
@@ -21,28 +21,18 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Norgeeee<3</h1>
-
-        <div class="countdown-container">
-            <div class="countdown-el days-c">
-                <p class="big-text" id="days">0</p>
-                <span>dager</span>
-            </div>
-            <div class="countdown-el hours-c">
-                <p class="big-text" id="hours">0</p>
-                <span>timer</span>
-            </div>
-            <div class="countdown-el mins-c">
-                <p class="big-text" id="mins">0</p>
-                <span>minutter</span>
-            </div>
-            <div class="countdown-el seconds-c">
-                <p class="big-text" id="seconds">0</p>
-                <span>sekunder</span>
-            </div>
-        </div>
+        <form id="form">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by location"
+                autocomplete="off"
+            />
+        </form>
+        <main id="main"></main>
         </section>
-        <p>&copy;Tonje e noob</p></a>
+            
+        
         <!----JavaScript for toggle menu---->
     <script>
         var navLinks = document.getElementById("navLinks");
@@ -54,6 +44,7 @@
         function hideMenu() {
         navLinks.style.right = "-200px";
         }
-    </script>  
+    </script> 
+    <p>&copy;Tonje e noob</p></a>
     </body>
 </html>
